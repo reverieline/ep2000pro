@@ -5,6 +5,7 @@ if(process.argv.length<3){
     process.exit(0);
 }
 const port=process.argv[2];
+const format=process.argv.length>3?process.argv[3]:"json";
 
 var com = new SerialPort({
     path: port,
@@ -214,5 +215,9 @@ function publishRes(res1, res2) {
     output['EnableKeySound'] = parseInt(res2[8], 16) == 0 ? "Enable" : "Disable";
     output['EnableBacklight'] = parseInt(res2[9], 16) == 0 ? "Disable" : "Enable";
 
-    console.log(JSON.stringify(output));
+    if(format!='json')
+        Object.keys(output).forEach(k=>console.log(k+":"+output[k]));
+    else 
+        console.log(JSON.stringify(output));
+    
 }
