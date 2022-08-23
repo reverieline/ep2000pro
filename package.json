@@ -1,0 +1,14 @@
+{
+  "name": "ep2000pro",
+  "version": "1.0.0",
+  "description": "Must EP2000Pro inverter info script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serialport": "^10.4.0"
+  }
+}
