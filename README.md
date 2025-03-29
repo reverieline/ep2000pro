@@ -1,6 +1,5 @@
-# MUST EP2000Pro state script
-The script dumps current inverter state to the output.
-Based on PowerMonitor analysys.
+# MUST EP2000Pro
+This scripts allows you to monitor and configure the MUST EP2000Pro compatible inverters. 
 Tested on Luxeon UPS-500ZR.
 # Installation
 ```npm install```
