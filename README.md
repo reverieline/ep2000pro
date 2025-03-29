@@ -5,6 +5,11 @@ Tested on Luxeon UPS-500ZR.
 # Installation
 ```npm install```
 # Usage
-```node index <port>```
-```node set <port> <reg> <value>```
+Dump current state:\
+```node index <port> [json|line]```\
+\
+Set register value:\
+```node set <port> <reg> <value>```\
+\
+To list available to set registers, run ```node set``` without any parameters.
  
