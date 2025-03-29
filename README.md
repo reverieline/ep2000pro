@@ -6,4 +6,5 @@ Tested on Luxeon UPS-500ZR.
 ```npm install```
 # Usage
 ```node index <port>```
+```node set <port> <reg> <value>```
  
